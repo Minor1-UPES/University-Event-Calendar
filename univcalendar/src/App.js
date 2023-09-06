@@ -1,14 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
-
-
-const events = [
-  { title: "Teacher's Day", date: '2023-09-05' },
-  { title: 'Synopsis Evaluation', date: '2023-08-24' },
-  { title: 'Rakhi Celebration', date: '2023-08-30' },
-  { title: 'GitHub Event', date: '2023-09-09' }
-]
+import axios from 'axios'
 
 export function App() {
   // fetching data from node backend
@@ -16,19 +9,13 @@ export function App() {
   const [timeFrame, setTimeFrame] = useState('dayGridMonth')
 
   useEffect(() => {
-    fetch('/api').then(
-      response => response.json()
-      ).then(
-        data => {
-          setEventData(data)
-        }
-        )}, [])
+    axios.get('http://localhost:5000/api')
+    .then((res) => setEventData(res.data))
+  }, [])
 
-        console.log(eventData.events)
-
-      function changeCalendarTimeFrame() {
-        setTimeFrame('dayGridWeek')
-      }
+  function changeCalendarTimeFrame() {
+    setTimeFrame('dayGridWeek')
+  }
 
   return (
     <div>
@@ -38,7 +25,7 @@ export function App() {
         plugins={[dayGridPlugin]}
         initialView={[timeFrame]}
         weekends={true}
-        events={events}
+        events={eventData}
         eventContent={renderEventContent}
       />
     </div>
