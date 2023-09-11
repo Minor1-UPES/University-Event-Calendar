@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import axios from 'axios'
 
 export function App() {
@@ -10,7 +11,7 @@ export function App() {
 
   useEffect(() => {
     axios.get('http://localhost:5000/api')
-    .then((res) => setEventData(res.data))
+      .then((res) => setEventData(res.data))
   }, [])
 
   function changeCalendarTimeFrame() {
