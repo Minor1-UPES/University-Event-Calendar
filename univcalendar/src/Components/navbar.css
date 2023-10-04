@@ -1,0 +1,37 @@
+.navbar {
+	height: 10%;
+	width: 100%;
+	background-color: #f2f3f4;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.navbarHeadingLink {
+	margin-left: 1rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.div {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 1rem;
+}
+
+.link {
+	margin: 1rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	background-color: #DADEDF;
+	display: inline-block;
+    color: blue;
+
+}
+
+.event {
+    margin : 0.5rem;
+}
