@@ -1,9 +1,16 @@
 import React from "react";
+import { useState } from "react";
 import "./eventform.css";
+import Navbar from "./Navbar";
+const EventButtonClick = () => {
+	const [eventTitle, setTitle] = useState({ eventTitle: "" });
+	const [eventDesc, setUsername] = useState({ eventDesc: "" });
+
+};
 const EventForm = () => {
 	return (
 		<>
-			<h1> Add Event</h1>
+			<Navbar> </Navbar>
 			<div className='event-container'>
 				<div className='event-container-one'>
 					<input
@@ -29,7 +36,7 @@ const EventForm = () => {
 						placeholder='Event Venue'
 					></input>
 				</div>
-				<button className='add btn'>Add event</button>
+				<button className='addBtn'>Add event</button>
 			</div>
 		</>
 	);
