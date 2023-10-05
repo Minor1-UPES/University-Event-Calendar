@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CalendarHome } from './Components/CalendarHome';
 import Navbar from './Components/Navbar';
 import EventForm from './Components/EventForm';
-
+import Hero from './Components/Hero';
+import Footer from './Components/Footer';
 export function App() {
   return (
     <Router>
@@ -13,7 +14,7 @@ export function App() {
       </Routes>
 
       <Routes>
-        <Route path='' element={<Navbar />} />
+        <Route path='' element={<><Navbar /> <Hero /> <Footer/></>} />
       </Routes>
       <Routes>
         <Route path='/event' element={<EventForm />} />
