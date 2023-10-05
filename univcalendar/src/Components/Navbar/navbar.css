@@ -11,7 +11,7 @@
 .navbarHeadingLink {
 	margin-left: 1rem;
 	font-weight: bold;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	text-decoration: none;
 	color: black;
 }
@@ -23,20 +23,21 @@
 }
 
 .link {
-	margin: 1rem;
+	margin: 0rem 1rem;
 	padding: 0.5rem;
 	text-decoration: none;
-	background-color: #dadedf;
+	color: white;
 	display: inline-block;
-	color: blue;
+	background-color: #334aff;
 	font-weight: bold;
 	font-size: 1rem;
-    border: 1px solid black;
+	border: 1px solid #334AFF;
 }
 
 .link:hover {
 	background-color: white;
-	border: 1px solid black;
+	color: #334aff;
+	transition: all 0.3s ease-out;
 }
 .event {
 	margin: 0.5rem;

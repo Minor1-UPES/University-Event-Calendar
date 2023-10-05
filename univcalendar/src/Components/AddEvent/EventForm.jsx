@@ -1,11 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import "./eventform.css";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar/Navbar";
 const EventButtonClick = () => {
 	const [eventTitle, setTitle] = useState({ eventTitle: "" });
 	const [eventDesc, setUsername] = useState({ eventDesc: "" });
-
 };
 const EventForm = () => {
 	return (
