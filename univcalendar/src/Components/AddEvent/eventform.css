@@ -1,19 +1,42 @@
 .event-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 90%;
 }
 
+.event-heading {
+    width: 45%;
+    text-align: center;
+}
 
+.event-subcontainer {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+}
 .event {
     width : 50%;
-    padding:1.5rem;
+    padding:1rem;
+    border: 1px solid #334aff;
+    background-color: rgb(244, 244, 244);
 }
 
 .addBtn {
     padding: 1rem;
     cursor: pointer;
+  	background-color: #334aff;
+	color: white;
+    border: 1px solid #334aff;
+	border-radius: 28px;
+	font-size: 1rem;
+	margin-top: 1.5rem;
+}
+
+.addBtn:hover {
+	background-color: white;
+	color: #334aff;
+	transition: all 0.3s ease-out;
 }

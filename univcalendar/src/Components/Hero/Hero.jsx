@@ -14,18 +14,11 @@ const Hero = () => {
 					<a href='/calendar' className='heroAnchor' target='_blank'>
 						Show Events
 					</a>
-					<a href='/calendar' className='heroAnchor' target='_blank'>
+					<a href='/calendar' className='hero-anchor-2' target='_blank'>
 						Add Event
 					</a>
 				</div>
 			</div>
-			{/* <div className='heroColumns'>
-				<img
-					src='https://www.pioneeredge.in/wp-content/uploads/2022/03/UPES.jpg'
-					alt='Image of College Campus'
-					className='heroImage'
-				></img>
-			</div> */}
 		</div>
 	);
 };

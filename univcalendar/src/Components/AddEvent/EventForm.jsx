@@ -1,17 +1,27 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import "./eventform.css";
 import Navbar from "../Navbar/Navbar";
-const EventButtonClick = () => {
-	const [eventTitle, setTitle] = useState({ eventTitle: "" });
-	const [eventDesc, setUsername] = useState({ eventDesc: "" });
-};
+import Footer from "../Footer/Footer";
+
 const EventForm = () => {
+	// const EventButtonClick = () => {
+	// 	const [eventTitle, setTitle] = useState({ eventTitle: "" });
+	// 	const [eventDesc, setUsername] = useState({ eventDesc: "" });
+	// };
+	// const handleClick = async (event) => {
+	// 	setTitle = 
+	// };
+
 	return (
 		<>
 			<Navbar> </Navbar>
 			<div className='event-container'>
-				<div className='event-container-one'>
+				<h2 className='event-heading'>
+					{" "}
+					Enter event details and SUBMIT when done{" "}
+				</h2>
+				<div className='event-subcontainer'>
 					<input
 						type='text'
 						className='event title'
@@ -20,10 +30,10 @@ const EventForm = () => {
 					<input
 						type='text'
 						className='event desc'
-						placeholder='Event Desc'
+						placeholder='Event Desccription'
 					></input>
 				</div>
-				<div className='event-container-two'>
+				<div className='event-subcontainer'>
 					<input
 						type='date'
 						className='event date'
@@ -35,8 +45,9 @@ const EventForm = () => {
 						placeholder='Event Venue'
 					></input>
 				</div>
-				<button className='addBtn'>Add event</button>
+				<button className='addBtn'>Submit Details</button>
 			</div>
+			<Footer></Footer>
 		</>
 	);
 };

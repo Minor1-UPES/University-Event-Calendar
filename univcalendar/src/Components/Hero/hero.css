@@ -48,9 +48,30 @@
 	border-radius: 28px;
 }
 
+.hero-anchor-2 {
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #334aff;
+	margin-top: 1.5rem;
+	padding: 1rem;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 0.5rem;
+	border: 1px solid #334aff;
+	border-radius: 28px;
+}
+
 .heroAnchor:hover {
 	background-color: white;
 	color: #334aff;
+	transition: all 0.3s ease-out;
+}
+
+.hero-anchor-2:hover {
+	background-color: #334aff;
+	color: white;
 	transition: all 0.3s ease-out;
 }
 
