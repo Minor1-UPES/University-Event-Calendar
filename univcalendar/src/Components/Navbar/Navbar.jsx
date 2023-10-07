@@ -5,7 +5,7 @@ const Navbar = () => {
 	return (
 		<nav className='navbar'>
 			<a class='navbarHeadingLink' href='/'>
-				University Calendar
+				Event Calendar
 			</a>
 			<div>
 				<a href='/calendar' className='link' target='_blank'>
