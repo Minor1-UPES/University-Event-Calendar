@@ -27,12 +27,29 @@ const EventForm = () => {
 
 	// Function to handle the submit button
 	const EventButtonClick = async (event) => {
-		console.log({
-			"eventTitle": eventTitle,
-			"eventDesc": eventDesc,
-			"eventDate": eventDate,
-			"eventVenue": eventVenue
-		})
+		// Below snippet verifies that the date of the event is in the future.
+		var today = new Date();
+		var dd = String(today.getDate()).padStart(2, "0");
+		var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+		var yyyy = today.getFullYear();
+		today = yyyy + "-" + mm + "-" + dd;
+		if (
+			eventDate < today ||
+			eventTitle == "" ||
+			eventDesc == "" ||
+			eventVenue == ""
+		) {
+			window.alert(
+				"Incorrect or Incomplete details found, please verify the details."
+			);
+		} else {
+			console.log({
+				eventTitle: eventTitle,
+				eventDesc: eventDesc,
+				eventDate: eventDate,
+				eventVenue: eventVenue,
+			});
+		}
 	};
 	return (
 		<>

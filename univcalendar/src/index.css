@@ -17,14 +17,6 @@ body {
 	flex-direction: column;
 	justify-items: center;
 	align-items: center;
-}
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
-}
-
-#root {
 	width: 100%;
 	height: 100%;
 }
