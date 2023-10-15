@@ -14,7 +14,7 @@ const Hero = () => {
 					<a href='/calendar' className='heroAnchor' target='_blank'>
 						Show Events
 					</a>
-					<a href='/calendar' className='hero-anchor-2' target='_blank'>
+					<a href='/event' className='hero-anchor-2'>
 						Add Event
 					</a>
 				</div>

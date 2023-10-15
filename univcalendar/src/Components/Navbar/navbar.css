@@ -1,7 +1,7 @@
 .navbar {
-	height: 10%;
+	height:8%;
 	width: 100%;
-	background-color: #f2f3f4;
+	background-color: #f9f7f4;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -9,7 +9,7 @@
 }
 
 .navbarHeadingLink {
-	margin-left: 1rem;
+	padding-left: 1rem;
 	font-weight: bold;
 	font-size: 1.6rem;
 	text-decoration: none;
@@ -32,6 +32,7 @@
 	font-weight: bold;
 	font-size: 1rem;
 	border: 1px solid #334AFF;
+	border-radius: 8px;
 }
 
 .link:hover {
