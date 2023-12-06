@@ -9,7 +9,7 @@ export function CalendarHome() {
     const [timeFrame, setTimeFrame] = useState('dayGridMonth')
     
     useEffect(() => {
-        axios.get('http://localhost:5000/api')
+        axios.get('http://localhost:5000/create')
         .then((res) => setEventData(res.data))
     }, [])
 
