@@ -4,7 +4,7 @@ import "./navbar.css";
 const Navbar = () => {
 	return (
 		<nav className='navbar'>
-			<a class='navbarHeadingLink' href='/'>
+			<a className='navbarHeadingLink' href='/'>
 				Event Calendar
 			</a>
 			<div>
